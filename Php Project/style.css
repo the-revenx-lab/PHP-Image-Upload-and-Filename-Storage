@@ -1,0 +1,115 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a clean and modern font throughout the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for the form, centered with a responsive design */
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fefefe;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Description text under the heading */
+.form-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for file input */
+input[type="file"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .form-description {
+        font-size: 1em;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+/* Additional styles for accessibility */
+button:focus,
+input[type="file"]:focus {
+    outline: 3px solid #66afe9;
+    outline-offset: 2px;
+}

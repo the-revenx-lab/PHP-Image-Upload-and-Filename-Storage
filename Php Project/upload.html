@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Images</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="images[]" accept="image/*" multiple required>
+            <button type="submit" name="upload">Upload Images</button>
+        </form>
+    </div>
+</body>
+</html>
